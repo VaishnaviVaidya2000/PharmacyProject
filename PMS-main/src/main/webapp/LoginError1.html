@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+        
+    }
+    .fixed-header{
+        width: 100%;
+        position: fixed;        
+        background: #1abc9c;
+        padding: 10px 0;
+        color: white;
+        font-size:20px;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    
+     nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+    }
+</style>
+<link rel="stylesheet" href="css/Login.css">
+</head>
+<body>
+<div class="fixed-header">
+<p><center><b>Pharmacy Management system</b></center></p>
+</div>
+	<form action="Login.jsp" method="post">
+	<div class="container">
+		<div class="loginbox">
+			<h2>Login</h2>
+				<div class="customselect">
+					<div class="select">
+  					<select  name="utype" required>
+    					<option value="" selected disabled>Select Account Type</option>
+    					<option value="0">Admin</option>
+    					<option value="1">Customer</option>
+    					<option value="2">Vendor</option>
+  					</select>
+					</div>
+				</div>
+			<input type="text" name="userid" placeholder="Enter User ID" required>
+			<input type="password" name="password" placeholder="Enter Password" required>
+			<h3>Invalid Password</h3>
+			<input type="submit" value="Login">
+		</div>
+	</div>
+	</form>
+</body>
+</html>

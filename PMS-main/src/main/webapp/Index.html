@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Index</title>
+<style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+        
+    }
+    .fixed-header{
+        width: 100%;
+        position: fixed;        
+        background: #1abc9c;
+        padding: 10px 0;
+        color: white;
+        font-size:20px;
+    }
+    
+    .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: black;
+        padding: 10px 0;
+        color: white;
+        font-size:10px;
+        
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+        
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+    }
+</style>
+<link rel="stylesheet" href="css/Index.css">
+</head>
+<body>
+<div class="fixed-header">
+<p><center><b>Pharmacy Management system</b></center></p>
+</div>
+	<div class="container">
+		<div class="indexbox">
+			<p><p>
+			<h2>Pharmacy Management System</h2>
+			<form action="Login.html"><button class="button1">Login</button></form>
+			<!-- <form action="Register.html"><button class="button1">Register As Customer</button></form>
+			<form action="SellerRegister.html"><button class="button1">Register As Vendor</button></form> -->
+		</div>
+	</div>
+	
+	<div class="fixed-footer">
+	<p><center><b>Copyright &copy; 2022 VM</b></center></p>
+</div>
+
+</body>
+</html>

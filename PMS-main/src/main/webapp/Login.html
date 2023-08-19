@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+        
+    }
+    .fixed-header{
+        width: 100%;
+        position: fixed;        
+        background: #1abc9c;
+        padding: 10px 0;
+        color: white;
+        font-size:20px;
+    }
+    
+    .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: blue;
+        padding: 10px 0;
+        color: white;
+        font-size:10px;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+        
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+    }
+</style>
+<link rel="stylesheet" href="css/Login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="fixed-header">
+<p><center><b>Pharmacy Management system</b></center></p>
+</div>
+	<form action="Login.jsp" method="post">
+	<div class="container">
+		<div class="loginbox">
+			<h2>Login</h2>
+				<div class="customselect">
+					<div class="select">
+  					<select  name="utype" required>
+    					<option value="" selected disabled>Select Account Type</option>
+    					<option value="0">Admin</option>
+    					<option value="1">Customer</option>
+    					<option value="2">Vendor</option>
+  					</select>
+					</div>
+				</div>
+			<input type="text" name="userid" placeholder="Enter User ID" required>
+			<input type="password" name="password" placeholder="Enter Password" required>
+			<input type="submit" value="Login">
+		</div>
+	</div>
+	<div class="fixed-footer">
+	<p><center><b>Contact details</b></center></p>
+	<p><center><i class="fa fa-phone fa-lg" aria-hidden="true">  98654 23104</i></center></p>
+	<p><center><b><i class="fa fa-envelope-o" aria-hidden="true"> Contact us</i></b></center></p>
+     <p><center><i class="fa fa-map-marker fa-lg" aria-hidden="true">  SB.Road,Pune,India</i></center></p>
+</div>
+	</form>
+</body>
+</html>
